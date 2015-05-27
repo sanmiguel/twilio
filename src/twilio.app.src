@@ -5,7 +5,11 @@
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  crypto,
+                  ssl,
+                  inets,
+                  jsx
                  ]},
   {mod, { twilio_app, []}},
   {env, []}
