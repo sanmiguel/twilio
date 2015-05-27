@@ -1,0 +1,12 @@
+{application, twilio,
+ [
+  {description, "A simple application to interact with (a subset of) the Twilio ReST API."},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { twilio_app, []}},
+  {env, []}
+ ]}.
