@@ -1,5 +1,5 @@
 # twilio
-An erlang library for a subset of the twilio API
+An erlang library for a subset of the [twilio API](https://www.twilio.com/docs/api/rest)
 
 This is not intended to be a client for the entire twilio API. If you want one of those, try [the official site](https://www.twilio.com/docs/libraries).
 
