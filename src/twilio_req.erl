@@ -11,7 +11,7 @@ get_account(URIRoot, AccountID) ->
     case httpc:request(get, Req, [], opts()) of
         {ok, {{_, 200, _}, Hdrs, Body}} ->
             %% TODO Can we solicit a binary body from httpc?
-            decode(lists:keyfind("content-type", 1, Hdrs), list_to_binary(Body));
+            decode(lists:keyfind("content-type", 1, Hdrs), Body);
         {ok, {{_, N, _}, _, Body}} ->
             {error, {N, Body}};
         {error,_}=Err ->
